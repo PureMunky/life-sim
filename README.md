@@ -1,5 +1,7 @@
 # The Same Morning
 
+**Play it: https://puremunky.github.io/life-sim/**
+
 A branching, converging life simulation. Every life starts the same way:
 
 > 6:47 a.m. Sun comes through the blinds in thin gold bars. Somewhere down the street a dog is barking at nothing. Yesterday you graduated; today you are twenty-two and nothing has been decided yet.
@@ -27,7 +29,11 @@ No build step and no dependencies. Open `index.html` in a browser, or serve the 
 npm start            # python3 -m http.server 8000 → http://localhost:8000
 ```
 
-Works as-is on GitHub Pages. Keyboard: `1`–`5` to choose, `Enter` to continue.
+Keyboard: `1`–`5` to choose, `Enter` to continue.
+
+## Deploying
+
+`.github/workflows/pages.yml` runs the tests on every PR and push. On a push to `main` it also publishes `index.html`, `styles.css`, and `src/` to GitHub Pages, but only if the tests pass. One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
 ## How it's built
 
