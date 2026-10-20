@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Same Morning</title>
+    <meta name="description" content="A branching, converging life simulation. Every life begins on the same morning." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-era="0">
+    <div class="sky" aria-hidden="true"></div>
+
+    <header class="bar">
+      <button class="brand" id="home" type="button" title="Back to the title screen">The Same Morning</button>
+      <div class="meta" id="meta" hidden>
+        <span id="life-label"></span>
+        <span class="dot">·</span>
+        <span id="age-label"></span>
+      </div>
+      <div class="stats" id="stats" hidden></div>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <footer class="foot">
+      <span>Keys <kbd>1</kbd>–<kbd>5</kbd> choose · <kbd>Enter</kbd> continue</span>
+    </footer>
+
+    <script src="src/engine.js"></script>
+    <script src="src/story.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>

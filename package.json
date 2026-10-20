@@ -1,0 +1,11 @@
+{
+  "name": "life-sim",
+  "version": "0.1.0",
+  "description": "The Same Morning — a branching, converging life simulation. Every life starts on the same morning.",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "license": "MIT"
+}
